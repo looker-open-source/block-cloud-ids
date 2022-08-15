@@ -12,13 +12,13 @@
        "value_constraint": "connection"
     },
     "SCHEMA": {
-      "label": "Schema",
+      "label": "Schema"
     },
     "THREAT_TABLE": {
-      "label": "Threat Table",
+      "label": "Threat Table"
     },
     "TRAFFIC_TABLE": {
-      "label": "Traffic Table",
+      "label": "Traffic Table"
     }
   },
   "models": [
