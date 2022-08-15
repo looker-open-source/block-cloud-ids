@@ -1,27 +1,30 @@
 {
-  "label": "CCAI Insights",
+  "label": "Cloud Intrusion Detection System",
   "category_label": "Models",
   "branding": {
-    "image_uri": "https://marketplace-api.looker.com/block-icons/ccai_icon.png",
-    "tagline": "CCAI Insights integrates with the Looker Block to aggregate data outside of contact center sources to provide a more holistic view of the business."
+    "image_uri": "https://marketplace-api.looker.com/block-icons/ids.png",
+    "tagline": "The Cloud IDS block allows you to export Threat and Traffic security data related to GCE and GKE Workloads, from Google Cloud IDS and analyze it in Looker."
   },
 
   "constants": {
-    "CONNECTION_NAME": {
+    "CONNECTION": {
       "label": "Connection Name",
        "value_constraint": "connection"
     },
-    "INSIGHTS_TABLE": {
-      "label": "Insights Table",
+    "SCHEMA": {
+      "label": "Schema",
     },
-    "UNNEST_TABLE": {
-      "label": "Unnest Table",
+    "THREAT_TABLE": {
+      "label": "Threat Table",
+    },
+    "TRAFFIC_TABLE": {
+      "label": "Traffic Table",
     }
   },
   "models": [
     {
-      "name": "insights_demo",
-      "connection_constant": "CONNECTION_NAME"
+      "name": "cloud_ids",
+      "connection_constant": "CONNECTION"
     }
   ]
 }
