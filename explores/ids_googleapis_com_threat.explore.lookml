@@ -1,4 +1,4 @@
-include: "/views/ids_googleapis_com_threat.view"
+include: "/views/ids_googleapis_com_threat.view.lookml"
 
 explore: ids_googleapis_com_threat {
   group_label: "Google Cloud IDS"
