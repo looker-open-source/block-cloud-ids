@@ -1,5 +1,7 @@
 # Google Cloud IDS
 
+This is not an officially supported Google product. This project is not eligible for the [Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).
+
 ## Why use the Google Cloud IDS Looker Block?
 The Cloud IDS block allows you to export Threat and Traffic security data related to GCE and GKE Workloads, from Google Cloud IDS and analyze it in Looker. The flexibility of the data model gives you the ability to perform security monitoring and analysis of your Google Cloud resources protected by Cloud IDS.
 
@@ -25,7 +27,6 @@ For the Block to work, you will need to :
 * Assign IAM role “BigQuery Data Viewer” & “BigQuery Job User” to the Service Account for this project
 * Create a Log router sink in Cloud Logging, where Sink destination is the BigQuery Dataset that you created and using this filter to include Cloud IDS from the GLB logs:
 ```logName=("projects/$PROJECT_ID/logs/ids.googleapis.com%2Fthreat" OR "projects/$PROJECT_ID/logs/ids.googleapis.com%2Ftraffic")```
-
 
 You might need to add additional policy in your Log sink filter to capture all of your Cloud IDS Data.
 See more documentation at: [https://cloud.google.com/logging/docs/export/configure_export_v2](https://cloud.google.com/logging/docs/export/configure_export_v2)
